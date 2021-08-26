@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
+    <title>Home page</title>
+</head>
+
+<body>
+        <div id="toggle"></div>
+        <div id="navbar">
+            <ul>
+                <li><a href=""><span class="title">Home</span> <span class="icon"><i class="fas fa-home"></i></span> </a></li>
+                <li><a href="#contact"><span class="title">contact</span> <span class="icon"><i class="fas fa-address-book"></i></span> </a></li>
+                <li><a href=""><span class="title">Profile</span> <span class="icon"><i class="fas fa-user"></i></span> </a></li>
+                <li><a href="#about"><span class="title">About</span> <span class="icon"><i class="fas fa-info-circle"></i> </span> </a></li>
+
+            </ul>
+        </div>
+        <script src="navbar.js"></script>
+    <header>
+        <div class="laptopTools">
+            <div class="laptop"></div>
+        </div>
+
+        <section>
+            <svg id="pat" width="69" height="110" fill="none" viewBox="0 0 69 110">
+
+                <path
+                    d="M0.09375 80.7344C0.09375 73.9844 0.09375 67.6094 0.09375 61.6094C0.1875 55.6094 0.328125 49.7031 0.515625 43.8906C0.796875 37.9844 1.125 32.0312 1.5 26.0312C1.875 19.9375 2.39062 13.375 3.04688 6.34375H7.125V60.3438H37.7812C37.6875 56.9688 37.6406 53.3594 37.6406 49.5156C37.6406 45.5781 37.5938 41.6406 37.5 37.7031C37.4062 33.6719 37.3125 29.7812 37.2188 26.0312C37.2188 22.1875 37.2188 18.5781 37.2188 15.2031C37.2188 11.8281 37.2188 8.875 37.2188 6.34375C37.2188 3.8125 37.2188 1.84375 37.2188 0.4375C37.5 0.4375 37.9688 0.53125 38.625 0.71875C39.375 0.8125 40.0781 1 40.7344 1.28125C41.4844 1.46875 42.1406 1.79688 42.7031 2.26562C43.2656 2.64062 43.5469 3.15625 43.5469 3.8125V109.141L39.1875 108.297C39 108.297 38.8594 107.688 38.7656 106.469C38.6719 105.25 38.5781 103.75 38.4844 101.969C38.4844 100.094 38.4375 97.9844 38.3438 95.6406C38.3438 93.2031 38.2969 90.8594 38.2031 88.6094C38.2031 86.2656 38.1562 84.0625 38.0625 82C38.0625 79.9375 38.0625 78.2031 38.0625 76.7969C38.0625 75.4844 38.0625 73.7031 38.0625 71.4531C38.0625 69.2031 38.0156 66.625 37.9219 63.7188L7.125 69.2031L6.84375 109.281H0.09375C0.09375 109.188 0.09375 108.531 0.09375 107.312C0.09375 106.094 0.09375 104.594 0.09375 102.812C0.09375 100.938 0.09375 98.9219 0.09375 96.7656C0.09375 94.5156 0.09375 92.3594 0.09375 90.2969C0.09375 88.2344 0.09375 86.3594 0.09375 84.6719C0.09375 82.9844 0.09375 81.6719 0.09375 80.7344Z"
+                    id="svg_6" stroke="#000000" stroke-width="5" />
+
+                <path
+                    d="M60.7031 54.4375C61.8281 54.4375 62.7656 54.3906 63.5156 54.2969C64.3594 54.2031 65.0625 54.6719 65.625 55.7031C65.9062 59.9219 66.2344 64.2344 66.6094 68.6406C66.9844 72.9531 67.3594 77.3125 67.7344 81.7188C68.1094 86.125 68.3438 90.5781 68.4375 95.0781C68.625 99.4844 68.6719 103.797 68.5781 108.016C68.5781 108.578 68.4375 108.906 68.1562 109C67.875 109.188 67.4531 109.234 66.8906 109.141C66.4219 109.141 65.8125 109.094 65.0625 109C64.4062 109 63.6562 109.094 62.8125 109.281L60.7031 54.4375ZM52.5469 29.2656C52.5469 28.6094 52.5938 27.9062 52.6875 27.1562C52.7812 26.3125 52.9688 25.5625 53.25 24.9062C53.625 24.25 54.0469 23.6875 54.5156 23.2188C55.0781 22.75 55.7344 22.5156 56.4844 22.5156C57.6094 22.5156 58.7344 22.5625 59.8594 22.6562C60.9844 22.75 62.0625 22.9844 63.0938 23.3594C64.125 23.6406 64.9688 24.1562 65.625 24.9062C66.2812 25.5625 66.6094 26.5469 66.6094 27.8594C66.6094 30.1094 65.7656 32.125 64.0781 33.9062C62.3906 35.5938 60.3281 36.4375 57.8906 36.4375C56.0156 36.4375 54.6562 35.7344 53.8125 34.3281C52.9688 32.8281 52.5469 31.1406 52.5469 29.2656ZM60.7031 29.9688C60.4219 29.9688 60.2812 30.2031 60.2812 30.6719C60.2812 31.1406 60.4219 31.375 60.7031 31.375C61.0781 31.375 61.2656 31.1406 61.2656 30.6719C61.2656 30.2031 61.0781 29.9688 60.7031 29.9688Z"
+                    id="svg_7" stroke="#000000" stroke-width="5" />
+
+            </svg>
+        </section>
+
+    </header>
+
+    <main>
+        <div class="bgImage">
+
+        </div>
+
+        <div id="about" class="text">
+            <h2>Hi,<br> i am Shuvo, <br>
+                web devoloper.</h2>
+        </div>
+        <div class="socialLinks">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr"> <span class="icon"><i class="fab fa-facebook-f"></i></span></a>
+        </div>
+        
+    </main>
+
+
+
+
+
+    <footer>
+        <h2>About me</h2>
+        <br>
+        <p>My full name is Shuvo dev nath. I am a self learner web developer.Actually coding is my hobby. </p>
+        
+        
+        <h3 class="contact" id="contact">Contact</h3>
+        <section class="formTools">
+            
+            <form action="">
+                <div class="formBox">
+                    <label for="name">Name</label><br>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="formBox">
+                    <label for="">Email</label><br>
+                    <input type="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="formBox">
+                    <label for="">Comment</label><br>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment"></textarea>
+                </div>
+                <div class="formBox">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+            
+        </section>
+    </footer>
+
+
+
+    <script src="path.js"></script>
+</body>
+
+</html>

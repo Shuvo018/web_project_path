@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    /* background: cornflowerblue; */
+    background: #fff;
+    
+}
+/* ----------Navigation bar ------------- */
+
+#navbar{
+    position: fixed;
+    top: 0;
+    right: 5%;
+    z-index: 1000;
+}
+#navbar ul{
+    position: relative;
+    top: 80px;
+    width: 100%;
+}
+#navbar ul li{
+    position: relative;
+    list-style: none;
+    
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    padding: 6px;
+    transition: all .5s;
+   
+}
+#navbar ul li:hover{
+    background: #ccc;
+}
+#navbar ul li a{
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+    font-size: 24px;
+    font-weight: 400;
+}
+#navbar ul li a .icon{
+    display: block;
+    text-align: center;
+    line-height: 60px;
+}
+#navbar ul li a .icon .fas{
+   font-size: 34px;
+}
+#navbar ul li a .icon .fas:hover{
+    /* color: #fff; */
+ }
+ #navbar ul li a .title{
+    position: absolute;
+    right: 80px;
+    display: block;
+    background: #fff;
+    width: auto;
+    padding: 10px;
+    transform: translate(10px,-10%);
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+ }
+ #navbar ul li:hover a .title
+ {
+     transform: translate(10px, -15%);
+     visibility: visible;
+     opacity: 1;
+ }
+/* ----------Navigation bar ------------- */
+/* -----------loptop animation start----------- */
+.laptopTools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.laptop{
+    
+   position: absolute;
+   top: 25%;
+    height: 400px;
+    width: 580px; 
+  
+    border-radius: 15px;
+    /* border: 20px solid rgb(40, 40, 41); */
+    animation: laptop 12s linear;
+   
+    transition: all 1s linear;
+   
+}
+@keyframes laptop{
+    0%{
+        /* top: 25%; */
+        background-color: transparent;
+       transform: scale(1);
+    }
+    10%{
+        /* top: 25%; */
+        background-color: transparent;
+        border-top: 20px solid rgb(40, 40, 41);
+        transform: scale(1);
+
+    }
+    20%{
+        /* top: 25%; */
+        background-color: transparent;
+        border-right: 20px solid rgb(40, 40, 41);
+        transform: scale(1);
+    }
+    30%{
+        /* top: 25%; */
+        background-color: transparent;
+        border-bottom: 20px solid rgb(40, 40, 41);
+        transform: scale(1);
+    }
+    50%,90%{
+         /* top: 25%; */
+        border: 20px solid rgb(40, 40, 41);
+        background-color: rgb(225, 226, 163);
+        transform: scale(1);
+    }
+    100%{
+       
+        transform: scale(2);
+    }
+    
+}
+.laptop::before{
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 8%;
+    transform: translate(-16%,0);
+    height: 100px;
+    width: 620px;
+    border: 20px solid rgb(40, 40, 41);
+    border-bottom-left-radius: 44px;
+    border-bottom-right-radius: 44px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    animation: laptop2 7s ease;
+    animation-delay: 4s;
+    transition: all .5s linear;
+}
+.laptop::after{
+    position:absolute;
+    content: '';
+    top:100%;
+    left: 30%;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(40, 40, 41);
+    border-bottom-left-radius: 34px;
+    border-bottom-right-radius: 34px;
+    visibility: hidden;
+    opacity: 0;
+    animation: laptop2 7s ease;
+    animation-delay: 4s;
+    transition: all .5s linear;
+}
+@keyframes laptop2{
+    0%,100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+/* -----------loptop animation end----------- */
+/* -----------path animation start------------ */
+#pat{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fill 5.5s ease-in;
+    animation-delay: 5.5s;
+}
+#pat path:nth-child(1){
+    stroke-dasharray: 492;
+    stroke-dashoffset: 492;
+    animation: pathanimate 6s ease-out;
+    animation-delay: 5s;
+}
+#pat path:nth-child(2){
+    stroke-dasharray: 120;
+    stroke-dashoffset: 120;
+    animation: pathanimate 6s ease-out;
+    animation-delay: 5s;
+}
+@keyframes pathanimate{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill{
+    to{
+        fill: #000000;
+    }
+}
+/* -----------path animation end------------ */
+/* -----------footer start----------- */
+main{
+    animation: homePage 2s ease-in-out;
+   animation-fill-mode: forwards;
+   animation-delay: 12s;
+   transition: all .5s ease-in-out;
+   visibility: hidden;
+   overflow: hidden;
+   
+}
+@keyframes homePage{
+    0%,100%{
+        visibility: visible;
+    }
+}
+main .bgImage{
+    height: 100vh;
+    width: 100%;
+   background: url(web_image_01.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   opacity: 0.8;
+   user-select: none;
+   transition:all 5s;
+    z-index: -100;
+   animation-name: bgImageAnimtion;
+   animation-duration: 20s;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+   animation-direction: alternate-reverse;
+   animation-play-state: running;
+   /* animation-delay: 15s; */
+
+}
+@keyframes bgImageAnimtion{
+    0%{
+        background-image: url(web__image_02.jpg);
+    }
+    100%{
+        background-image: url(web_image_01.jpg);
+    }
+}
+
+
+
+main .text {
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    font-size: 34px;
+    /* font-weight: 400; */
+    font-family: 'Rampart One', cursive;
+    /* letter-spacing: 2px; */
+    
+}
+main .socialLinks{
+    position: absolute;
+    top: 68%;
+    left: 10%;
+    background: rgba(0, 0, 0, 0.1);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all .5s;
+}
+main .socialLinks a{
+    text-align: center;
+}
+main .socialLinks a .icon{
+    
+    display: block;
+    padding: 12px 0px;
+
+}
+main .socialLinks a .icon .fab{
+    font-size: 34px;
+    color: #111;
+}
+main .socialLinks a .icon .fab:hover{
+    /* color: #fff;
+    transform: scale(1.4); */
+}
+main .socialLinks a .icon:hover{
+    /* background: #000;
+    border-radius: 50%; */
+    
+}
+footer{
+    
+}
+footer h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 34px;
+    /* font-weight: 400; */
+    font-family: 'Encode Sans SC', sans-serif;
+}
+footer p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+}
+
+
+
+.contact{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 34px;
+    text-decoration: underline;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+footer .formTools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+footer .formTools form{
+    font-size: 34px;
+    width: 400px;
+    height: 600px;
+}
+footer form .formBox{
+    margin-bottom: 12px;
+
+}
+footer form .formBox label{
+    font-size: 28px;
+    color: #111;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+footer form .formBox input,
+footer form .formBox textarea
+{
+    font-size: 18px;
+    color: #111;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+   border-radius: 7px;
+}
+footer form .formBox input[type="submit"]
+{
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+   width: 100px;
+   background-color: #333;
+   cursor: pointer;
+   
+}
+
+@media(max-width: 768px)
+{
+    body{
+        
+    }
+    #toggle{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background: #333;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    #toggle::before{
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background: #fff;
+        transform: translateY(-5px);
+        transition: 0.2s;
+    }
+    #toggle::after{
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background: #fff;
+        transform: translateY(5px);
+        transition: 0.2s;
+    }
+    #toggle.active::before{
+        transform: translateY(0px) rotate(45deg);
+    }
+    #toggle.active::after{
+        transform: translateY(0px) rotate(-45deg);
+    }
+    #navbar{
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background: #333;
+        z-index: 999;
+        transition: .5s;
+    }
+    #navbar.active{
+        right: 0;
+    }
+    #navbar ul{
+        position: relative;
+        margin-left: -100px;
+        margin-top: 50px;
+        
+    }
+    #navbar ul li{
+        position: relative;
+        list-style: none;
+        display: inline-block;
+        border-radius: 0;
+        height: 100%;
+        width: 50%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        
+        padding: 40px 40px 10px 0px;
+        
+       
+    }
+    #navbar ul li:hover{
+        background-color:unset;
+        
+    }
+    #navbar ul li a{
+        text-decoration: none;
+        width: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ccc;
+        font-size: 34px;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family: 'Encode Sans SC', sans-serif;
+    }
+    #navbar ul li a:hover{
+        color: #fff;
+        
+    }
+    #navbar ul li a .icon{
+        display: none;
+    }
+     #navbar ul li a .title{
+        position: absolute;
+        right: 0;
+        display: block;
+        background: #fff;
+        width: 0;
+        padding: 0;
+        transform: translate(0%,0%);
+        border-radius: 0;
+        box-shadow: 0 ;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.5s;
+    
+     }
+     #navbar ul li:hover a .title
+     {
+        background-color: orangered;
+        transform: translate(0, 0);
+     }
+
+     .laptopTools{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .laptop{
+        
+       position: absolute;
+       top: 25%;
+        height: 400px;
+        width: 250px; 
+      
+        border-radius: 15px;
+        /* border: 20px solid rgb(40, 40, 41); */
+        animation: laptop 12s linear;
+       
+        transition: all 1s linear;
+       
+    }
+    @keyframes laptop{
+        0%{
+            /* top: 25%; */
+            background-color: transparent;
+           transform: scale(1);
+        }
+        10%{
+            /* top: 25%; */
+            background-color: transparent;
+            border-top: 12px solid rgb(40, 40, 41);
+            transform: scale(1);
+    
+        }
+        20%{
+            /* top: 25%; */
+            background-color: transparent;
+            border-right: 12px solid rgb(40, 40, 41);
+            transform: scale(1);
+        }
+        30%{
+            /* top: 25%; */
+            background-color: transparent;
+            border-bottom: 12px solid rgb(40, 40, 41);
+            transform: scale(1);
+        }
+        50%,90%{
+             /* top: 25%; */
+            border: 12px solid rgb(40, 40, 41);
+            background-color: rgb(225, 226, 163);
+            transform: scale(1);
+        }
+        100%{
+           
+            transform: scale(2);
+        }
+        
+    }
+    .laptop::before{
+        display: none;
+    }
+    .laptop::after{
+        display: none;
+    }
+    main .text {
+        position: absolute;
+        top: 40%;
+        left: 6%;
+        font-size: 22px;
+        /* font-weight: 400; */
+        font-family: 'Rampart One', cursive;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
