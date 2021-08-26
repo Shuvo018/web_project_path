@@ -94,7 +94,7 @@ body{
 .laptop{
     
    position: absolute;
-   top: 25%;
+   top: 24%;
     height: 400px;
     width: 580px; 
   
@@ -263,7 +263,7 @@ main .bgImage{
 
 main .text {
     position: absolute;
-    top: 40%;
+    top: 38%;
     left: 6%;
     font-size: 34px;
     /* font-weight: 400; */
