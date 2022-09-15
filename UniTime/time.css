@@ -12,6 +12,11 @@ body{
     align-items: center;
 
 }
+.link{
+    padding: 45px;
+    color: #222;
+    font-size: 24px;
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 .allBox{
 padding-top: 5%;
@@ -37,6 +42,24 @@ padding-top: 5%;
 img{
     height: 30px;
     width: 30px;
+    animation: rotation 8s infinite linear;
+}
+@keyframes rotation{
+    10%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(35deg);
+    }
+    60%{
+        transform: rotate(0deg);
+    }
+    80%{
+        transform: rotate(-35deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 .allBox .box p{
     margin-top: -20px;
