@@ -70,3 +70,12 @@ img{
 section{
     padding: 5%;
 }
+@media(max-width: 768px)
+{
+    .allBox .box{
+        height: 100px;
+        width: 85vw;
+        padding: 5%;
+        margin: 10px;
+    }
+}
