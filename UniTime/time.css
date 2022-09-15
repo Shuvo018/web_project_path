@@ -12,6 +12,12 @@ body{
     align-items: center;
 
 }
+.header{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: #111;
+}
 .link{
     padding: 45px;
     color: #222;
