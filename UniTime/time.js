@@ -18,7 +18,7 @@ document.getElementById("histCT").innerHTML = days+"d, "+hour+"h : "+minutes +"m
 }, 1000);
 
 // history assignment
-var dest2 = new Date("sep 18, 2022").getTime();
+var dest2 = new Date("sep 26, 2022").getTime();
 var x2 = setInterval(function() { 
 var now2 = new Date().getTime();
 
